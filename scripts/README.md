@@ -52,3 +52,15 @@ supabase db push
 - Users can only access their own data
 - Tools catalog is public read-only
 
+## Seeding Data
+
+### Seed Tools Catalog (Optional)
+
+The tools catalog is defined in `config/tools.ts` and used statically in the app. If you want to store it in the database for dynamic management:
+
+```bash
+npm run seed
+```
+
+This will insert or update the tools catalog in the `tools` table.
+
