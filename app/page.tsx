@@ -17,7 +17,7 @@ export default function Home() {
       </section>
 
       {/* Tools Grid */}
-      <section className="container mx-auto px-4 pb-20">
+      <section id="tools" className="container mx-auto px-4 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {TOOL_CATALOG.map((tool) => (
             <ToolCard key={tool.slug} tool={tool} />
