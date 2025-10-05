@@ -13,7 +13,7 @@ export const TOOL_CATALOG: Tool[] = [
     slug: "save",
     name: "QuickSave",
     tagline: "Save any text fast",
-    href: "https://usecliq.com/",
+    href: "https://chromewebstore.google.com/detail/kbfahibkjajghdblkmpijbbalikfjaok?utm_source=item-share-cb",
     icon: "bookmark",
     orderIndex: 1,
   },
