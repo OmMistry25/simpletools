@@ -6,7 +6,7 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 md:py-32">
-        <div className="max-w-3xl mx-auto text-center space-y-6">
+        <div className="max-w-3xl mx-auto text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
             Simple Tools
           </h1>
