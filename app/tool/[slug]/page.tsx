@@ -41,7 +41,7 @@ export default async function ToolPage({ params }: ToolPageProps) {
         <div className="max-w-4xl mx-auto">
           {/* Back Link */}
           <Link
-            href="/"
+            href="/tools"
             className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground mb-8"
           >
             ← Back to all tools
@@ -64,70 +64,90 @@ export default async function ToolPage({ params }: ToolPageProps) {
             </div>
           </div>
 
-          {/* Description Section */}
-          <div className="prose prose-slate max-w-none mt-12">
+          {/* Key Features */}
+          <div className="mt-12 grid gap-4 md:grid-cols-2">
             {slug === "save" && (
-              <div className="space-y-6">
-                <h2 className="text-2xl font-semibold">About QuickSave</h2>
-                <p className="text-lg text-muted-foreground">
-                  QuickSave is your fast and simple text capture tool. Save notes, snippets, ideas, and more with just a few clicks.
-                </p>
-                <h3 className="text-xl font-semibold mt-8">Features</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>Quick text capture with keyboard shortcuts</li>
-                  <li>Organize with tags and search</li>
-                  <li>Browser bookmarklet for capturing from any page</li>
-                  <li>Secure cloud storage</li>
-                </ul>
-              </div>
+              <>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Fast Capture</div>
+                  <div className="text-sm text-muted-foreground">Save text with keyboard shortcuts</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Organize</div>
+                  <div className="text-sm text-muted-foreground">Tags and search built-in</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Bookmarklet</div>
+                  <div className="text-sm text-muted-foreground">Capture from any webpage</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Secure</div>
+                  <div className="text-sm text-muted-foreground">Cloud storage with encryption</div>
+                </div>
+              </>
             )}
 
             {slug === "qr" && (
-              <div className="space-y-6">
-                <h2 className="text-2xl font-semibold">About QR + Link</h2>
-                <p className="text-lg text-muted-foreground">
-                  Create short links and beautiful QR codes in seconds. Perfect for marketing, events, and sharing.
-                </p>
-                <h3 className="text-xl font-semibold mt-8">Features</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>Generate custom short links</li>
-                  <li>Create high-quality QR codes (PNG/SVG)</li>
-                  <li>Track clicks and analytics</li>
-                  <li>Customizable QR code designs</li>
-                </ul>
-              </div>
+              <>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Short Links</div>
+                  <div className="text-sm text-muted-foreground">Custom branded URLs</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">QR Codes</div>
+                  <div className="text-sm text-muted-foreground">High-quality PNG & SVG</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Analytics</div>
+                  <div className="text-sm text-muted-foreground">Track clicks and traffic</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Customizable</div>
+                  <div className="text-sm text-muted-foreground">Design your QR codes</div>
+                </div>
+              </>
             )}
 
             {slug === "docreader" && (
-              <div className="space-y-6">
-                <h2 className="text-2xl font-semibold">About DocReader</h2>
-                <p className="text-lg text-muted-foreground">
-                  Extract text and data from documents using OCR. Perfect for insurance cards, bills, and receipts.
-                </p>
-                <h3 className="text-xl font-semibold mt-8">Features</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>Intelligent OCR text extraction</li>
-                  <li>Automatic field detection</li>
-                  <li>Support for images and PDFs</li>
-                  <li>Edit and confirm extracted data</li>
-                </ul>
-              </div>
+              <>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">OCR Extraction</div>
+                  <div className="text-sm text-muted-foreground">Intelligent text recognition</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Auto-detect</div>
+                  <div className="text-sm text-muted-foreground">Finds key fields automatically</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Multi-format</div>
+                  <div className="text-sm text-muted-foreground">Images and PDFs supported</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Editable</div>
+                  <div className="text-sm text-muted-foreground">Review and correct results</div>
+                </div>
+              </>
             )}
 
             {slug === "oncue" && (
-              <div className="space-y-6">
-                <h2 className="text-2xl font-semibold">About OnCue</h2>
-                <p className="text-lg text-muted-foreground">
-                  Your AI-powered command bar for instant access to anything. Launch apps, search, and execute commands with ease.
-                </p>
-                <h3 className="text-xl font-semibold mt-8">Features</h3>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>Universal search across all your apps</li>
-                  <li>AI-powered suggestions</li>
-                  <li>Customizable keyboard shortcuts</li>
-                  <li>Browser extension for quick access</li>
-                </ul>
-              </div>
+              <>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Universal Search</div>
+                  <div className="text-sm text-muted-foreground">Find anything, anywhere</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">AI-Powered</div>
+                  <div className="text-sm text-muted-foreground">Smart suggestions</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Shortcuts</div>
+                  <div className="text-sm text-muted-foreground">Customizable hotkeys</div>
+                </div>
+                <div className="p-4 border rounded-lg">
+                  <div className="font-medium mb-1">Extension</div>
+                  <div className="text-sm text-muted-foreground">Browser integration</div>
+                </div>
+              </>
             )}
           </div>
         </div>

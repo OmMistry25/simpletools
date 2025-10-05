@@ -5,8 +5,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Simple Tools",
-  description: "Simple tools made simple",
+  title: "ST - Simple Utilities",
+  description: "Find the right tool for your needs",
 };
 
 export default function RootLayout({
