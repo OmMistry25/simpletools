@@ -16,10 +16,9 @@ interface ToolCardProps {
 
 export function ToolCard({ tool }: ToolCardProps) {
   const Icon = iconMap[tool.icon as keyof typeof iconMap] || Bookmark;
-  const isExternal = tool.href.startsWith("http");
 
   return (
-    <Link href={tool.href} target={isExternal ? "_blank" : undefined}>
+    <Link href={`/tool/${tool.slug}`}>
       <Card className="group hover:border-primary transition-all hover:shadow-md cursor-pointer h-full">
         <CardHeader>
           <div className="flex items-start justify-between">
