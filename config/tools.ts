@@ -5,6 +5,7 @@ export interface Tool {
   href: string;
   icon: string;
   orderIndex?: number;
+  comingSoon?: boolean;
 }
 
 export const TOOL_CATALOG: Tool[] = [
@@ -12,7 +13,7 @@ export const TOOL_CATALOG: Tool[] = [
     slug: "save",
     name: "QuickSave",
     tagline: "Save any text fast",
-    href: "/save",
+    href: "https://usecliq.com/",
     icon: "bookmark",
     orderIndex: 1,
   },
@@ -20,7 +21,7 @@ export const TOOL_CATALOG: Tool[] = [
     slug: "qr",
     name: "QR + Link",
     tagline: "Create short links and QR codes",
-    href: "/qr/new",
+    href: "https://mysmartlinq.com/",
     icon: "qr-code",
     orderIndex: 2,
   },
@@ -28,9 +29,10 @@ export const TOOL_CATALOG: Tool[] = [
     slug: "docreader",
     name: "DocReader",
     tagline: "Parse insurance cards and bills",
-    href: "/docreader/new",
+    href: "#",
     icon: "file-search",
     orderIndex: 3,
+    comingSoon: true,
   },
   {
     slug: "oncue",

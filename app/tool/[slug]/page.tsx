@@ -55,12 +55,18 @@ export default async function ToolPage({ params }: ToolPageProps) {
             <div className="flex-1">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">{tool.name}</h1>
               <p className="text-xl text-muted-foreground mb-6">{tool.tagline}</p>
-              <Button asChild size="lg">
-                <Link href={tool.href} target={isExternal ? "_blank" : undefined}>
-                  Launch {tool.name}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              {tool.comingSoon ? (
+                <Button size="lg" disabled>
+                  Coming Soon
+                </Button>
+              ) : (
+                <Button asChild size="lg">
+                  <Link href={tool.href} target={isExternal ? "_blank" : undefined}>
+                    Launch {tool.name}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              )}
             </div>
           </div>
 
